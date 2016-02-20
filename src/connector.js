@@ -49,7 +49,7 @@ Connector.prototype.set = function( key, value, callback ) {
 	}
 
 	value.ds_key = params.id;
-	params.collection.updateOne({ ds_key: params.id }, value, { upsert: true }, callback );
+	params.collection.update({ ds_key: params.id }, value, { upsert: true }, callback );
 };
 
 /**
@@ -103,7 +103,7 @@ Connector.prototype.delete = function( key, callback ) {
 		return;
 	}
 
-	params.collection.deleteOne({ ds_key: params.id }, callback );
+	params.collection.remove({ ds_key: params.id }, callback );
 };
 
 /**
