@@ -1,23 +1,22 @@
 {
-  "name": "deepstream.io-storage-mongodb",
-  "version": "0.2.2",
-  "description": "A template that can be forked to create new cache and storage connectors for deepstream.io",
+  "name": "deepstream.io-storage-tingodb",
+  "version": "0.0.1",
+  "description": "A simple connector for TingoDb (based on deepstream.io-storage-mongodb)",
   "main": "src/connector.js",
   "scripts": {
     "test": "node node_modules/jasmine-node/lib/jasmine-node/cli.js test --autotest --watch ./src"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hoxton-one/deepstream.io-storage-mongodb.git"
+    "url": "https://github.com/Vortex375/deepstream.io-storage-tingodb.git"
   },
   "author": "Wolfram Hempel",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hoxton-one/deepstream.io-storage-mongodb/issues"
+    "url": "https://github.com/Vortex375/deepstream.io-storage-tingodb/issues"
   },
-  "homepage": "http://deepstream.io",
   "dependencies": {
-    "mongodb": "~2.0"
+    "tingodb": "~0.4.2"
   },
   "devDependencies": {
     "grunt": "~0.4.5",
